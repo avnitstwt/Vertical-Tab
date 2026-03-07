@@ -25,13 +25,16 @@ body {
     width: 800px;
     background-color: white;
     height: 60vh;
-
+border-radius: 10px;
+ box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     padding: 2rem;
 }
 
 .header {
     font-size: 2.1rem;
     margin-bottom: 1rem;
+    font-weight: 100;
+    opacity: 0.9;
 }
 
 label {
@@ -41,9 +44,10 @@ label {
     
     position: relative;
     z-index: 2;
-    /* color: white; */
 }
-
+h2{
+    opacity: 0.7;
+}
 .cols {
     display: flex;
     align-items: center;
@@ -65,7 +69,6 @@ label {
 .right {
     height: 234px;
     padding-left: 10px;
-    background-color:blue ;
 }
 
 .right h2 {
@@ -82,7 +85,7 @@ label {
     z-index: 1;
     left: -14px;
     background-color: #500c6b;
-    transition: top 0.3s ease;
+    transition: top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 input {
