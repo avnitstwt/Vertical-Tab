@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+
+.box {
+    /* min-width: 950px; */
+    width: 800px;
+    background-color: white;
+    height: 60vh;
+
+    padding: 2rem;
+}
+
+.header {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 10px;
+    
+    position: relative;
+    z-index: 2;
+    /* color: white; */
+}
+
+.cols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+}
+
+.left {
+    height: 234px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    /* width: 30vw; */
+
+    gap: 10px;
+}
+
+.right {
+    height: 234px;
+    padding-left: 10px;
+    background-color:blue ;
+}
+
+.right h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.indi {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    z-index: 1;
+    left: -14px;
+    background-color: #500c6b;
+    transition: top 0.3s ease;
+}
+
+input {
+    display: flex;
+    display: none;
+}
+
+.right p {
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+#blog:checked~.indi {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    z-index: 1;
+    left: -14px;
+    background-color: #500c6b;
+
+}
+#help:checked~.indi {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 100px;
+    border-radius: 10px;
+    z-index: 1;
+    left: -14px;
+    background-color: #500c6b;
+
+}
+#code:checked~.indi {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 147px;
+    border-radius: 10px;
+    z-index: 1;
+    left: -14px;
+    background-color: #500c6b;
+}
+#person:checked~.indi {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 196px;
+    border-radius: 10px;
+    z-index: 1;
+    left: -14px;
+    background-color: #500c6b;
+}
+#home:checked~.home,#blog:checked~.blog,#help:checked~.help,#code:checked~.code,#person:checked~.person{
+    color: white;
+}
