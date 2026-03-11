@@ -3,6 +3,7 @@ const radios = document.querySelectorAll('input[type="radio"]');
 
 console.log(contentDivs);
 
+
 function updateDisplay(id) {
     contentDivs.forEach(div => {
         const targetClass = id.charAt(0).toUpperCase() + id.slice(1);
